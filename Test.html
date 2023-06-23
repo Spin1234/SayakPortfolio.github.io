@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* background-color: rgb(0, 0, 33); */
+        /* color: white; */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        height: 95px;
+        background-color: rgb(1, 1, 80);
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        color: rgb(153, 153, 226);
+        font-size: 1.02rem;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+      }
+      .firstSection > div{
+        width: 30%;
+      }
+      .leftSection{
+        font-size: 3rem;
+      }
+      .rightSection img{
+        width: 100%;
+      }
+      .purple{
+        color: rgb(170, 107, 228);
+      }
+      .btn:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      /* .ser > div{
+        width: 30%;
+        background-color: rgb(35, 5, 63);
+        margin: 30px;
+        color: white;
+        border-radius: 30px;
+        transition: 1s;
+      } */
+      /* .ser > div:hover{
+        transform: scale(1.1);
+      } */
+      .pro > div{
+        /* width: 100%; */
+        background-color: rgb(35, 5, 63);
+        margin: 20px;
+        color: white;
+        border-radius: 30px;
+        transition: 1s;
+      }
+      .pro a{
+        text-decoration: none;
+        color: white;
+      }
+      .pro > div:hover{
+        transform: scale(1.1);
+      }
+
+      .edu > div{
+        width: 100%;
+        /* background-color: rgb(35, 5, 63); */
+        margin: 20px;
+        color: white;
+        border-radius: 30px;
+        transition: 1s;
+      }
+      /* input{
+        width: 100%;
+      } */
+
+      /* Apply basic styles to form elements */
+      .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+form {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+#skills {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 200px;
+  margin: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  background-color: #f2f2f2;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #4CAF50;
+}
+
+.skill-level-90 {
+  width: 90%;
+}
+
+.skill-level-80 {
+  width: 80%;
+}
+
+.skill-level-70 {
+  width: 70%;
+}
+.skill-level-50 {
+  width: 50%;
+}
+.skill-level-40 {
+  width: 40%;
+}
+.skill-level-60 {
+  width: 60%;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-right: 15px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+      @media screen and (max-width: 620px) {
+        .pro, .ab{
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+        .left{
+          font-size: 1rem;
+          margin-left: 23px;
+        }
+        .leftSection{
+          font-size: 1.5rem;
+        }
+        nav ul li{
+        margin: 5px;
+      }
+}
+    </style>
+  </head>
+  <body>
+  
+    <div class="hdr" style="background-color: rgb(0, 0, 33); color: white;">
+    <header>
+      <nav>
+        <div class="left">Sayak's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, my name is <span class="purple">Sayak</span>
+          <div>and I am a passionate Web Developer</div>
+          <button class="btn" style="display: flex; margin:20px 0; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;">Hire Me</button>
+        </div>
+        <div class="rightSection">
+          <img src="5072860.png" alt="">
+        </div>
+      </section>
+</div>
+      <!--About-->
+      <section id="about">
+        <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
+          <h1>About</h1>
+        </div>
+        <div class="ab" style="display: flex; justify-content: space-around; background-color: #f2f2f2;">
+          <div style="width: 45%; font-size: 1.67rem; height: 300px; justify-content: center; align-items: center; margin-top: 10%;">
+            Hello, my name is Sayak and I am a passionate Web Developer and this is my portfolio, you can contact me in order to build any website.
+            <div>
+              <button class="btn" style="display: flex; margin:20px 0; height: 45px; align-items: center; font-weight: bold; font-size: large; background-color: rgb(0, 0, 33); width: 30%; justify-content: center; transition: 1s; border-radius: 4px; color: white;">Resume</button>
+            </div>
+          </div>
+          <div style="width: 30%; display: flex; justify-content: center; align-items: center;">
+            <img src="5072860.png" alt="" style="height: 250px; border-radius: 50%;">
+          </div>
+        </div>
+      </section>
+
+
+      <section id="education">
+        <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
+          <h1>Education</h1>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; padding: 30px;">
+          <div style="flex: 20%; padding: 20px; background-color: rgb(35, 5, 63); color: white;">
+           <p> 2020 - 2024</p>
+           <br>
+            <h2>Bachelor's Degree</h2>
+          </div>
+          <div style="flex: 80%; padding: 20px; background-color: #f2f2f2;">
+            <h2><b> Bachelor's Degree In Computer Science</b></h2><br>
+            <p>TECHNO INTERNATIONAL NEW TOWN</p><br>
+            <p>CGPA: 9.30/10</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; padding: 30px;">
+          <div style="flex: 20%; padding: 20px; background-color: rgb(35, 5, 63); color: white;">
+           <p> 2020 - 2024</p>
+           <br>
+            <h2>Bachelor's Degree</h2>
+          </div>
+          <div style="flex: 80%; padding: 20px; background-color: #f2f2f2;">
+            <h2><b> Bachelor's Degree In Computer Science</b></h2><br>
+            <p>TECHNO INTERNATIONAL NEW TOWN</p><br>
+            <p>CGPA: 9.30/10</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; padding: 30px;">
+          <div style="flex: 20%; padding: 20px; background-color: rgb(35, 5, 63); color: white;">
+           <p> 2020 - 2024</p>
+           <br>
+            <h2>Bachelor's Degree</h2>
+          </div>
+          <div style="flex: 80%; padding: 20px; background-color: #f2f2f2;">
+            <h2><b> Bachelor's Degree In Computer Science</b></h2><br>
+            <p>TECHNO INTERNATIONAL NEW TOWN</p><br>
+            <p>CGPA: 9.30/10</p>
+          </div>
+        </div>
+      </section>
+      <!--Services-->
+      <!-- <section id="services">
+        <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
+          <h1>Services</h1>
+        </div>
+        <div class="ser" style="display: flex; background-color: #f2f2f2;">
+          <div>
+            <h2 style="margin: 20px; font-weight: bold;">Web Development</h2>
+            <p style="margin: 20px;">
+              Build amazing websites and digize your business.
+              <br><br>
+              HTML <br>
+              CSS <br>
+              PHP <br>
+              Bootstrap
+            </p>
+          </div>
+          <div>
+            <h2 style="margin: 20px; font-weight: bold;">Web Front-End</h2>
+            <p style="margin: 20px;">
+              Build amazing website Front-End to attract users.
+              <br><br>
+              HTML <br>
+              CSS <br>
+              Bootstrap
+            </p>
+          </div>
+          <div>
+            <h2 style="margin: 20px; font-weight: bold;">Web Back-End</h2>
+            <p style="margin: 20px;">
+              Build amazing websites and stunning logic in database.
+              <br><br>
+              PHP <br>
+              MySql
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-70"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-50"></div>
+            </div>
+          </div>
+          <!-- <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-40"></div>
+            </div>
+          </div> -->
+          <div class="skill">
+            <div class="skill-name">PHP</div>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-50"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">C Programming</div>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-60"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">Bootstrap</div>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-40"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-name">OOPS</div>
+            <div class="skill-bar">
+              <div class="skill-level skill-level-70"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!--Projects-->
+      <section id="project">
+        
+        <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
+          <h1>Projects</h1>
+        </div>
+
+        <div class="pro" style="display: flex; justify-content: center; align-items: center; background-color: #f2f2f2;">
+          <div>
+            <a href="https://github.com/Spin1234/FreeImageDownloadingWebsite">
+            <h2 style="margin: 20px; font-weight: bold;">Image Gallary Website</h2>
+            <p style="margin: 20px;">
+              This is free image downloading and uploading website.
+              In this website you can download images for free and also can upload your own images without creating account.
+            </p>
+          </a>
+          <button class="btn" style="margin:20px; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;"><a href="http://freephotos.epizy.com" style="text-decoration: none; color: black;">View Site</a></button>
+          </div>
+
+        <div>
+            <a href="https://github.com/Spin1234/FreeImageDownloadingWebsite">
+            <h2 style="margin: 20px; font-weight: bold;">Image Gallary Website</h2>
+            <p style="margin: 20px;">
+              This is free image downloading and uploading website.
+              In this website you can download images for free and also can upload your own images without creating account.
+            </p>
+          </a>
+          <button class="btn" style="margin:20px; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;"><a href="http://freephptos.epizy.com" style="text-decoration: none; color: black;">View Site</a></button>
+          </div>
+
+          <div>
+            <a href="https://github.com/Spin1234/FreeImageDownloadingWebsite">
+            <h2 style="margin: 20px; font-weight: bold;">Image Gallary Website</h2>
+            <p style="margin: 20px;">
+              This is free image downloading and uploading website.
+              In this website you can download images for free and also can upload your own images without creating account.
+            </p>
+          </a>
+          <button class="btn" style="margin:20px; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;"><a href="http://freephptos.epizy.com" style="text-decoration: none; color: black;">View Site</a></button>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Me-->
+      <section id="contact">
+          <!-- <div style="display: flex; flex-wrap: wrap; background-color: rgb(0, 0, 33); color: white; margin: 50px;">
+            <div class="left" style="flex: 50%;">
+              <div style="margin: 35px;">
+                <label for="yuy">gjkj</label>
+                <input type="text" name="" id="">
+              </div>
+            </div>
+            <div class="right" style="flex: 50%; background-color: brown;">
+              <label for="">Textarea</label>
+              <input type="text" name="" id="">
+            </div>
+          </div> -->
+          <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
+            <h1>Contact</h1>
+          </div>
+          <div class="container">
+            <form>
+              <h1>Contact Me</h1>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          
+      </section>
+    </main>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="5072860.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Sayak's Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

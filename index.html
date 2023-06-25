@@ -250,6 +250,9 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
+.icon{
+  display: none;
+}
 
 
       @media screen and (max-width: 620px) {
@@ -267,6 +270,12 @@ footer {
         }
         nav ul li{
         margin: 5px;
+      }
+      .right{
+        display: none;
+      }
+      .icon{
+        display: block;
       }
 }
     </style>
@@ -286,6 +295,9 @@ footer {
             <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
+        <button class="icon" onclick="myFunction()">
+        <div class="active">Menu</div>
+        </button>
       </nav>
     </header>
     <main>
@@ -554,6 +566,20 @@ footer {
         <p>&copy; 2023 Sayak's Portfolio. All rights reserved.</p>
       </div>
     </footer>
-    
+
+    <script>
+      function myFunction() {
+  var elements = document.getElementsByClassName("right");
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (element.style.display === "block") {
+      element.style.display = "none";
+    } else {
+      element.style.display = "block";
+    }
+  }
+}
+
+      </script>
   </body>
 </html>

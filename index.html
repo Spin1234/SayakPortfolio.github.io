@@ -578,8 +578,9 @@ footer {
     if (element.style.display === "block") {
       element.style.display = "none";
     } else {
-      element.style.display = "block";
-      element.style.width = "70%";
+        element.style.display = "block";
+        var menu_btn = document.getElementByClassName("icon");
+        menu_btn.style.margin = "0";
     }
   }
 }

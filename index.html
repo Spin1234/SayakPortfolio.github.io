@@ -207,6 +207,34 @@ button[type="submit"]:hover {
   width: 60%;
 }
 
+      .project {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+}
+
+.project-item {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: rgb(35, 5, 63);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.pd{
+  padding: 20px;
+}
 
 footer {
   background-color: #333;
@@ -256,14 +284,11 @@ footer {
 
 
       @media screen and (max-width: 620px) {
-        .pro, .ab{
+/*         .pro, .ab{
           flex-wrap: wrap;
           justify-content: center;
           align-items: center;
-        }
-        nav{
-          width: 100%;
-        }
+        } */
         .left{
           font-size: 1rem;
           margin-left: 23px;
@@ -279,6 +304,9 @@ footer {
       }
       .icon{
         display: block;
+      }
+      .project-item {
+        width: 100%;
       }
 }
     </style>
@@ -464,7 +492,7 @@ footer {
       
 
       <!--Projects-->
-      <section id="project">
+<!--       <section id="project">
         
         <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
           <h1>Projects</h1>
@@ -504,6 +532,39 @@ footer {
           <button class="btn" style="margin:20px; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;"><a href="http://freephptos.epizy.com" style="text-decoration: none; color: black;">View Site</a></button>
           </div>
         </div>
+      </section> -->
+
+    <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
+        <h1>Projects</h1>
+      </div>
+
+      <section class="project">
+        <a href="https://github.com/Spin1234/FreeImageDownloadingWebsite" style="text-decoration: none; color: black;">
+        <div class="project-item">
+          <h2>Image Gallary Website</h2>
+          <p class="pd">This is free image downloading and uploading website.
+            In this website you can download images for free and also can upload your own images without creating account.</p>
+          <a href="http://freephotos.epizy.com/" class="project-button">View Site</a>
+        </div>
+      </a>
+
+      <a href="https://github.com/Spin1234/FreeImageDownloadingWebsite" style="text-decoration: none; color: black;">
+        <div class="project-item">
+          <h2>Online Railway Reservation System</h2>
+          <p class="pd">This is a online railway ticket booking system.
+            In this website you can register yourself and the then login to your account to book your railway ticket.</p>
+          <a href="#" class="project-button">View Site</a>
+        </div>
+      </a>
+
+      <a href="https://github.com/Spin1234/FreeImageDownloadingWebsite" style="text-decoration: none; color: black;">
+        <div class="project-item">
+          <h2>Project Title</h2>
+          <p class="pd">Project Description</p>
+          <a href="#" class="project-button">View Site</a>
+        </div>
+      </a>
+        <!-- Add more project items here -->
       </section>
 
       <!--Contact Me-->

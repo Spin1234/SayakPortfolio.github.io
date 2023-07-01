@@ -286,6 +286,9 @@ footer {
 .pd{
   padding: 20px;
 }
+.hamb_menu{
+  display: none;
+}
 
       @media screen and (max-width: 768px) {
         .ab, .project{
@@ -315,6 +318,23 @@ footer {
       .btn1{
        width: auto;
       }
+      .hamb_menu ul{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hamb_menu ul a li{
+        list-style: none;
+        padding: 20px;
+        background-color: #050d69;
+      }
+      .hamb_menu ul a{
+        text-decoration: none;
+        color: white;
+      }
+      .hamb_menu ul li:hover{
+        background-color: #010539;
+      }
 }
     </style>
   </head>
@@ -338,6 +358,17 @@ footer {
         </button>
       </nav>
     </header>
+
+      <div class="hamb_menu">
+      <ul>
+        <a href="#"><li>Home</li></a><hr>
+        <a href="#about"><li>About</li></a><hr>
+        <a href="#skills"><li>Skills</li></a><hr>
+        <a href="#project"><li>Projects</li></a><hr>
+        <a href="#contact"><li>Contact Me</li></a><hr>
+      </ul>
+    </div>
+      
     <main>
       <section class="firstSection">
         <div class="leftSection">

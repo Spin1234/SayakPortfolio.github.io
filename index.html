@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sayak Portfolio</title>
+    <title>Document</title>
     <style>
       * {
         margin: 0;
@@ -61,10 +61,6 @@
         color: rgb(170, 107, 228);
       }
       .btn:hover{
-        transform: scale(1.1);
-        cursor: pointer;
-      }
-      .btn1:hover{
         transform: scale(1.1);
         cursor: pointer;
       }
@@ -289,20 +285,18 @@ footer {
 .hamb_menu{
   display: none;
 }
-
       @media screen and (max-width: 620px) {
-        .ab, .project{
+        .project, .ab{
           flex-wrap: wrap;
           justify-content: center;
           align-items: center;
         }
-        
         .left{
           font-size: 1rem;
           margin-left: 23px;
         }
         .leftSection{
-          font-size: 1.4rem;
+          font-size: 1.5rem;
         }
         nav ul li{
         margin: 5px;
@@ -316,9 +310,7 @@ footer {
       .project-item {
         width: 100%;
       }
-      .btn1{
-       width: auto;
-      }
+
       .hamb_menu ul{
         display: flex;
         flex-direction: column;
@@ -349,9 +341,8 @@ footer {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href=".project">Projects</a></li>
+            <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
@@ -361,23 +352,24 @@ footer {
       </nav>
     </header>
 
-      <div class="hamb_menu">
+
+    <div class="hamb_menu">
       <ul>
         <a href="#"><li>Home</li></a><hr>
         <a href="#about"><li>About</li></a><hr>
-        <a href="#education"><li>Education</li></a><hr>
         <a href="#skills"><li>Skills</li></a><hr>
-        <a href=".project"><li>Projects</li></a><hr>
+        <a href="#project"><li>Projects</li></a><hr>
         <a href="#contact"><li>Contact Me</li></a><hr>
       </ul>
     </div>
-      
+
+
     <main>
       <section class="firstSection">
         <div class="leftSection">
           Hi, my name is <span class="purple">Sayak</span>
           <div>and I am a passionate Web Developer</div>
-          <button class="btn1" style="margin:20px 0; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;">Hire Me</button>
+          <button class="btn" style="display: flex; margin:20px 0; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;">Hire Me</button>
         </div>
         <div class="rightSection">
           <img src="5072860.png" alt="">
@@ -391,7 +383,7 @@ footer {
         </div>
         <div class="ab" style="display: flex; justify-content: space-around; background-color: #f2f2f2;">
           <div style="flex: 45%; font-size: 1.67rem; height: 300px; justify-content: center; align-items: center; margin-top: 10%; padding: 30px;">
-           Hello, my name is Sayak and I am a passionate Web Developer and this is my portfolio, you can contact me in order to build any website.
+            Hello, my name is Sayak and I am a passionate Web Developer and this is my portfolio, you can contact me in order to build any website.
             <div>
               <button class="btn" style="display: flex; margin:20px 0; height: 45px; align-items: center; font-weight: bold; font-size: large; background-color: rgb(0, 0, 33); width: 30%; justify-content: center; transition: 1s; border-radius: 4px; color: white;">Resume</button>
             </div>
@@ -663,6 +655,7 @@ footer {
       </section>
     </main>
 
+
     <footer>
       <div class="footer-container">
         <div class="footer-logo">
@@ -672,9 +665,8 @@ footer {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href=".project">Projects</a></li>
+            <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -703,6 +695,6 @@ footer {
   }
 }
 
-      </script>
+  </script>
   </body>
 </html>

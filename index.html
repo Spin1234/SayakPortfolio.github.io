@@ -285,7 +285,8 @@ footer {
 .hamb_menu{
   display: none;
 }
-      @media screen and (max-width: 620px) {
+      @media only screen and (max-width: 620px) {
+
         .project, .ab{
           flex-wrap: wrap;
           justify-content: center;
@@ -328,6 +329,9 @@ footer {
       .hamb_menu ul li:hover{
         background-color: #010539;
       }
+      /* .ab1 p, h3{
+        font-size: 1rem;
+      } */
 }
     </style>
   </head>
@@ -341,8 +345,9 @@ footer {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href=".project">Projects</a></li>
+            <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
@@ -359,7 +364,7 @@ footer {
         <a href="#about"><li>About</li></a><hr>
         <a href="#education"><li>Education</li></a><hr>
         <a href="#skills"><li>Skills</li></a><hr>
-        <a href=""><li>Projects</li></a><hr>
+        <a href="#project"><li>Projects</li></a><hr>
         <a href="#contact"><li>Contact Me</li></a><hr>
       </ul>
     </div>
@@ -383,8 +388,8 @@ footer {
           <h1>About</h1>
         </div>
         <div class="ab" style="display: flex; justify-content: space-around; background-color: #f2f2f2;">
-          <div style="flex: 45%; font-size: 1.67rem; height: 300px; justify-content: center; align-items: center; margin-top: 10%; padding: 30px;">
-            Hello, my name is Sayak and I am a passionate Web Developer and this is my portfolio, you can contact me in order to build any website.
+          <div style="flex: 45%; font-size: 1.3rem; height: 300px; justify-content: center; align-items: center; margin-top: 10%; padding: 30px;">
+            
             <div>
               <button class="btn" style="display: flex; margin:20px 0; height: 45px; align-items: center; font-weight: bold; font-size: large; background-color: rgb(0, 0, 33); width: 30%; justify-content: center; transition: 1s; border-radius: 4px; color: white;">Resume</button>
             </div>
@@ -544,9 +549,9 @@ footer {
       
 
       <!--Projects-->
-      <!-- <section id="project">
+      <section id="project">
       
-        <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
+        <!--<div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
           <h1>Projects</h1>
         </div>
 
@@ -583,7 +588,7 @@ footer {
           <button class="btn" style="margin:20px; height: 45px; align-items: center; font-weight: bold; font-size: large;background-color: aliceblue; width: 30%; justify-content: center; transition: 1s; border-radius: 4px;"><a href="http://freephptos.epizy.com" style="text-decoration: none; color: black;">View Site</a></button>
           </div>
         </div>
-      </section> -->
+      -->
 
       <div style="display: flex; justify-content: center; align-items: center; margin: 45px; font-weight: bold;">
         <h1>Projects</h1>
@@ -617,6 +622,7 @@ footer {
       </a>
         <!-- Add more project items here -->
       </section>
+    </section>
       
 
 
@@ -668,7 +674,7 @@ footer {
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="">Projects</a></li>
+            <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
